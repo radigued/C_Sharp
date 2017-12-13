@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LISAModelStoreContainer" CdmEntityContainer="LISAEntities">
+    <EntitySetMapping Name="Articles">
+      <EntityTypeMapping TypeName="LISAModel.Article">
+        <MappingFragment StoreEntitySet="Article">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdCategory" ColumnName="IdCategory" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Quantite" ColumnName="Quantite" />
+          <ScalarProperty Name="Unite" ColumnName="Unite" />
+          <ScalarProperty Name="ImportId" ColumnName="ImportId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArticleAttributs">
+      <EntityTypeMapping TypeName="LISAModel.ArticleAttribut">
+        <MappingFragment StoreEntitySet="ArticleAttribut">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdArticle" ColumnName="IdArticle" />
+          <ScalarProperty Name="IdAttribut" ColumnName="IdAttribut" />
+          <ScalarProperty Name="Valeur" ColumnName="Valeur" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Attributs">
+      <EntityTypeMapping TypeName="LISAModel.Attribut">
+        <MappingFragment StoreEntitySet="Attribut">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Catalogues">
+      <EntityTypeMapping TypeName="LISAModel.Catalogue">
+        <MappingFragment StoreEntitySet="Catalogue">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdOperation" ColumnName="IdOperation" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="Vitesse" ColumnName="Vitesse" />
+          <ScalarProperty Name="Largeur" ColumnName="Largeur" />
+          <ScalarProperty Name="Hauteur" ColumnName="Hauteur" />
+          <ScalarProperty Name="ImportId" ColumnName="ImportId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="LISAModel.Categorie">
+        <MappingFragment StoreEntitySet="Categorie">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Magasins">
+      <EntityTypeMapping TypeName="LISAModel.Magasin">
+        <MappingFragment StoreEntitySet="Magasin">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="ImportId" ColumnName="ImportId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MagasinCatalogues">
+      <EntityTypeMapping TypeName="LISAModel.MagasinCatalogue">
+        <MappingFragment StoreEntitySet="MagasinCatalogue">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdMagasin" ColumnName="IdMagasin" />
+          <ScalarProperty Name="IdCatalogue" ColumnName="IdCatalogue" />
+          <ScalarProperty Name="DateDebut" ColumnName="DateDebut" />
+          <ScalarProperty Name="DateFin" ColumnName="DateFin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Média">
+      <EntityTypeMapping TypeName="LISAModel.Média">
+        <MappingFragment StoreEntitySet="Media">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdTypeMedia" ColumnName="IdTypeMedia" />
+          <ScalarProperty Name="IdArticle" ColumnName="IdArticle" />
+          <ScalarProperty Name="Chemin" ColumnName="Chemin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Operations">
+      <EntityTypeMapping TypeName="LISAModel.Operation">
+        <MappingFragment StoreEntitySet="Operation">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Titre" ColumnName="Titre" />
+          <ScalarProperty Name="DateDebut" ColumnName="DateDebut" />
+          <ScalarProperty Name="DateFin" ColumnName="DateFin" />
+          <ScalarProperty Name="ImportId" ColumnName="ImportId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pages">
+      <EntityTypeMapping TypeName="LISAModel.Page">
+        <MappingFragment StoreEntitySet="Page">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdCatalogue" ColumnName="IdCatalogue" />
+          <ScalarProperty Name="Numero" ColumnName="Numero" />
+          <ScalarProperty Name="ImportId" ColumnName="ImportId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PageArticles">
+      <EntityTypeMapping TypeName="LISAModel.PageArticle">
+        <MappingFragment StoreEntitySet="PageArticle">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdPage" ColumnName="IdPage" />
+          <ScalarProperty Name="IdArticle" ColumnName="IdArticle" />
+          <ScalarProperty Name="ZoneHauteur" ColumnName="ZoneHauteur" />
+          <ScalarProperty Name="ZoneLargeur" ColumnName="ZoneLargeur" />
+          <ScalarProperty Name="ZoneCoordonnéesX" ColumnName="ZoneCoordonnéesX" />
+          <ScalarProperty Name="ZoneCoordonnéesY" ColumnName="ZoneCoordonnéesY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrixCatalogueArticles">
+      <EntityTypeMapping TypeName="LISAModel.PrixCatalogueArticle">
+        <MappingFragment StoreEntitySet="PrixCatalogueArticle">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdCatalogue" ColumnName="IdCatalogue" />
+          <ScalarProperty Name="IdArticle" ColumnName="IdArticle" />
+          <ScalarProperty Name="Prix" ColumnName="Prix" />
+          <ScalarProperty Name="PrixAvantCoupon" ColumnName="PrixAvantCoupon" />
+          <ScalarProperty Name="PrixAvantCroise" ColumnName="PrixAvantCroise" />
+          <ScalarProperty Name="ReductionEuro" ColumnName="ReductionEuro" />
+          <ScalarProperty Name="ReductionPourcent" ColumnName="ReductionPourcent" />
+          <ScalarProperty Name="AvantageEuro" ColumnName="AvantageEuro" />
+          <ScalarProperty Name="AvantagePourcent" ColumnName="AvantagePourcent" />
+          <ScalarProperty Name="Ecotaxe" ColumnName="Ecotaxe" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeMedias">
+      <EntityTypeMapping TypeName="LISAModel.TypeMedia">
+        <MappingFragment StoreEntitySet="TypeMedia">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Utilisateurs">
+      <EntityTypeMapping TypeName="LISAModel.Utilisateur">
+        <MappingFragment StoreEntitySet="Utilisateur">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="MotDePasse" ColumnName="MotDePasse" />
+          <ScalarProperty Name="Discriminant" ColumnName="Discriminant" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

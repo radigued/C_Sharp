@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<operation id="120">
+		<code><![CDATA[OP120]]></code>
+		<title><![CDATA[30% d'avantages clients sur de nombreux produits]]></title>
+		<startDate type="timestamp">1457478000</startDate>
+		<endDate type="timestamp">1458428399</endDate>
+		<catalog id="1">
+			<type>fiches_produits</type>
+			<label><![CDATA[OP120_V1]]></label>
+			<speed>V1</speed>
+			<catalogWidth type="number">2317</catalogWidth>
+			<catalogHeight type="number">3309</catalogHeight>
+			<pages>
+				<page id="1">
+					<number type="number">1</number>
+					<products/>
+				</page>
+				<page id="2">
+					<number type="number">2</number>
+					<products>
+						<product id="40000">
+							<code><![CDATA[110400000]]></code>
+							<label><![CDATA[ROULÉ DE DINDE DE MA RÉGION FARCI AUX CHAMPIGNONS "ROYAL BERNARD"*]]></label>
+							<description><![CDATA[750 g. Le kg : 7,87 €.
+Pour l’achat de 2 produits strictement identiques (même code-barres), bénéficiez d’un avantage de 5,90 €.]]></description>
+							<category><![CDATA[Frais]]></category>
+							<price type="number">590</price>
+							<price_before_coupon type="number"/>
+							<price_crossed type="number"/>
+							<Reduction_euro type="number"/>
+							<Reduction_percent type="number"/>
+							<Avantage_euro type="number"/>
+							<Avantage_percent type="number"/>
+							<ecotaxe type="number">0</ecotaxe>
+							<image><![CDATA[images/Img_40000_16C004K_V1_Page_02_Image_0015.jpg]]></image>
+							<picto><![CDATA[images/Pic_40000_pop_100pcrembourseenTELsurle2epdt.png]]></picto>
+							<origin><![CDATA[ORIGINE FRANCE]]></origin>
+							<mention><![CDATA[*PRODUITS STRICTEMENT IDENTIQUES, MÊME CODE-BARRES.]]></mention>
+							<packaging/>
+							<lowerprice type="number">0</lowerprice>
+							<color><![CDATA[0]]></color>
+							<start_validity_date/>
+							<end_validity_date/>
+							<zones>
+								<zone type="rectangle">
+									<coordx type="number">470</coordx>
+									<coordy type="number">182</coordy>
+									<width type="number">2168</width>
+									<height type="number">2169</height>
+								</zone>
+							</zones>
+						</product>
+						<product id="40001">
+							<code><![CDATA[110400000]]></code>
+							<label><![CDATA[ROULÉ DE DINDE DE MA RÉGION FARCI AUX OLIVES "ROYAL BERNARD"*]]></label>
+							<description><![CDATA[750 g. Le kg : 7,87 €.
+Pour l’achat de 2 produits strictement identiques (même code-barres), bénéficiez d’un  de 5,90 €.]]></description>
+							<category><![CDATA[Frais]]></category>
+							<price type="number">590</price>
+							<price_before_coupon type="number"/>
+							<price_crossed type="number"/>
+							<Reduction_euro type="number"/>
+							<Reduction_percent type="number"/>
+							<Avantage_euro type="number"/>
+							<Avantage_percent type="number"/>
+							<ecotaxe type="number">0</ecotaxe>
+							<image><![CDATA[images/Img_40001_16C004K_V1_Page_02_Image_0016.jpg]]></image>
+							<picto><![CDATA[images/Pic_40001_pop_100pcrembourseenTELsurle2epdt.png]]></picto>
+							<origin><![CDATA[ORIGINE FRANCE]]></origin>
+							<mention><![CDATA[* PRODUITS STRICTEMENT IDENTIQUES, MÊME CODE-BARRES.]]></mention>
+							<packaging/>
+							<lowerprice type="number">0</lowerprice>
+							<color><![CDATA[0]]></color>
+							<start_validity_date/>
+							<end_validity_date/>
+							<zones>
+								<zone type="rectangle">
+									<coordx type="number">2728</coordx>
+									<coordy type="number">210</coordy>
+									<width type="number">2098</width>
+									<height type="number">2155</height>
+								</zone>
+							</zones>
+						</product>
+						<product id="40002">
+							<code><![CDATA[110400000]]></code>
+							<label><![CDATA[RHUBARBE ROUGE SURGELÉE "THOMAS LE PRINCE"*]]></label>
+							<description><![CDATA[1 kg.
+Pour l’achat de 2 produits strictement identiques (même code-barres), bénéficiez d’un  de 3,95 €.]]></description>
+							<category><![CDATA[Frais]]></category>
+							<price type="number">395</price>
+							<price_before_coupon type="number"/>
+							<price_crossed type="number"/>
+							<Reduction_euro type="number"/>
+							<Reduction_percent type="number"/>
+							<Avantage_euro type="number"/>
+							<Avantage_percent type="number"/>
+							<ecotaxe type="number">0</ecotaxe>
+							<image><![CDATA[images/Img_40002_16C004K_V1_Page_02_Image_0011.jpg]]></image>
+							<picto><![CDATA[images/Pic_40002_pop_100pcrembourseenTELsurle2epdt.png]]></picto>
+							<origin/>
+							<mention><![CDATA[* PRODUITS STRICTEMENT IDENTIQUES, MÊME CODE-BARRES.]]></mention>
+							<packaging/>
+							<lowerprice type="number">0</lowerprice>
+							<color><![CDATA[0]]></color>
+							<start_validity_date/>
+							<end_validity_date/>
+							<zones>
+								<zone type="rectangle">
+									<coordx type="number">460</coordx>
+									<coordy type="number">2519</coordy>
+									<width type="number">1239</width>
+									<height type="number">3358</height>
+								</zone>
+							</zones>
+						</product>
+						<product id="40003">
+							<code><![CDATA[110200000]]></code>
+							<label><![CDATA[BOISSON SOJA DU SUD-OUEST NATURE OU CALCIUM* "CÉRÉAL BIO"**]]></label>
+							<description><![CDATA[1 L.
+Pour l'achat de 2 produits strictement identiques (même code-barres), bénéficiez d’un  de 1,45 €.]]></description>
+							<category><![CDATA[Boisson sans alcool]]></category>
+							<price type="number">145</price>
+							<price_before_coupon type="number"/>
+							<price_crossed type="number"/>
+							<Reduction_euro type="number"/>
+							<Reduction_percent type="number"/>
+							<Avantage_euro type="number"/>
+							<Avantage_percent type="number"/>
+							<ecotaxe type="number">0</ecotaxe>
+							<image><![CDATA[images/Img_40003_16C004K_V1_Page_02_Image_0007.jpg, images/Img_40003_16C004K_V1_Page_02_Image_0008.jpg]]></image>
+							<picto><![CDATA[images/Pic_40003_pop_100pcrembourseenTELsurle2epdt.png]]></picto>
+							<origin/>
+							<mention><![CDATA[* PRODUITS STRICTEMENT IDENTIQUES, MÊME CODE-BARRES. ** PRODUITS ISSUS DE L'AGRICULTURE BIOLOGIQUE.]]></mention>
+							<packaging><![CDATA[L'UNITÉ]]></packaging>
+							<lowerprice type="number">0</lowerprice>
+							<color><![CDATA[0]]></color>
+							<start_validity_date/>
+							<end_validity_date/>							
+							<zones>
+								<zone type="rectangle">
+									<coordx type="number">1778</coordx>
+									<coordy type="number">2477</coordy>
+									<width type="number">1619</width>
+									<height type="number">3330</height>
+								</zone>
+							</zones>
+						</product>
+						<product id="40004">
+							<code><![CDATA[110200000]]></code>
+							<label><![CDATA[BOISSON SOJA DU SUD-OUEST VANILLE OU CHOCOLAT* "CÉRÉAL BIO"**]]></label>
+							<description><![CDATA[1 L.
+Pour l'achat de 2 produits strictement identiques (même code-barres), bénéficiez d’un  de 1,99 €.]]></description>
+							<category><![CDATA[Boisson sans alcool]]></category>
+							<price type="number">199</price>
+							<price_before_coupon type="number"/>
+							<price_crossed type="number"/>
+							<Reduction_euro type="number"/>
+							<Reduction_percent type="number"/>
+							<Avantage_euro type="number"/>
+							<Avantage_percent type="number"/>
+							<ecotaxe type="number">0</ecotaxe>
+							<image><![CDATA[images/Img_40004_16C004K_V1_Page_02_Image_0009.jpg, images/Img_40004_16C004K_V1_Page_02_Image_0010.jpg]]></image>
+							<picto><![CDATA[images/Pic_40004_pop_100pcrembourseenTELsurle2epdt.png]]></picto>
+							<origin/>
+							<mention><![CDATA[* PRODUITS STRICTEMENT IDENTIQUES, MÊME CODE-BARRES. ** PRODUITS ISSUS DE L'AGRICULTURE BIOLOGIQUE.]]></mention>
+							<packaging><![CDATA[L'UNITÉ]]></packaging>
+							<lowerprice type="number">0</lowerprice>
+							<color><![CDATA[0]]></color>
+							<start_validity_date/>
+							<end_validity_date/>
+							<zones>
+								<zone type="rectangle">
+									<coordx type="number">450</coordx>
+									<coordy type="number">6017</coordy>
+									<width type="number">2158</width>
+									<height type="number">3106</height>
+								</zone>
+							</zones>
+						</product>
+						<product id="40005">
+							<code><![CDATA[110300000]]></code>
+							<label><![CDATA[BLANC CHÂTAIGNE D'ARDÈCHE OU BLANC ABRICOT DU ROUSSILLON OU ROSÉ CASSIS DE BOURGOGNE "COEUR DE RÉGION"*]]></label>
+							<description><![CDATA[Boisson arômatisée à base de vin. 10% vol. 75 cl. Le L : 3,99 €.
+Pour l’achat de 2 produits strictement identiques (même code barres), bénéficiez d’un  de 2,99 €.]]></description>
+							<category><![CDATA[Boisson avec alcool]]></category>
+							<price type="number">299</price>
+							<price_before_coupon type="number"/>
+							<price_crossed type="number"/>
+							<Reduction_euro type="number"/>
+							<Reduction_percent type="number"/>
+							<Avantage_euro type="number"/>
+							<Avantage_percent type="number"/>
+							<ecotaxe type="number">0</ecotaxe>
+							<image><![CDATA[images/Img_40005_16C004K_V1_Page_02_Image_0012.jpg, images/Img_40005_16C004K_V1_Page_02_Image_0013.jpg, images/Img_40005_16C004K_V1_Page_02_Image_0014.jpg]]></image>
+							<picto><![CDATA[images/Pic_40005_pop_100pcrembourseenTELsurle2epdt.png]]></picto>
+							<origin/>
+							<mention><![CDATA[* PRODUITS STRICTEMENT IDENTIQUES, MÊME CODE-BARRES. L’ABUS D’ALCOOL EST DANGEREUX POUR LA SANTÉ. À CONSOMMER AVEC MODÉRATION.]]></mention>
+							<packaging><![CDATA[L'UNITÉ]]></packaging>
+							<lowerprice type="number">0</lowerprice>
+							<color><![CDATA[0]]></color>
+							<start_validity_date/>
+							<end_validity_date/>
+							<zones>
+								<zone type="rectangle">
+									<coordx type="number">2688</coordx>
+									<coordy type="number">6045</coordy>
+									<width type="number">2218</width>
+									<height type="number">3218</height>
+								</zone>
+							</zones>
+						</product>
+					</products>
+				</page>
+				<page id="3">
+					<number type="number">3</number>
+					<products>
+						<product id="40006">
+							<code><![CDATA[110300000]]></code>
+							<label><![CDATA[AOC (2) CORBIÈRES "DOMAINE CRÉMAILHE" 2014*]]></label>
+							<description><![CDATA[75 cl. Le L : 6,52 €.
+Pour l’achat de 2 produits strictement identiques (même code-barres), bénéficiez d’un  de 4,89 €.]]></description>
+							<category><![CDATA[Boisson avec alcool]]></category>
+							<price type="number">489</price>
+							<price_before_coupon type="number"/>
+							<price_crossed type="number"/>
+							<Reduction_euro type="number"/>
+							<Reduction_percent type="number"/>
+							<Avantage_euro type="number"/>
+							<Avantage_percent type="number"/>
+							<ecotaxe type="number">0</ecotaxe>
+							<image><![CDATA[images/Img_40006_16C004K_V1_Page_03_Image_0015.jpg]]></image>
+							<picto><![CDATA[images/Pic_40006_pop_100pcrembourseenTELsurle2epdt.png]]></picto>
+							<origin/>
+							<mention><![CDATA[* PRODUITS STRICTEMENT IDENTIQUES, MÊME CODE-BARRES. (2) APPELLATION D'ORIGINE CONTRÔLÉE. L’ABUS D’ALCOOL EST DANGEREUX POUR LA SANTÉ. À CONSOMMER AVEC MODÉRATION.]]></mention>
+							<packaging/>
+							<lowerprice type="number">0</lowerprice>
+							<color><![CDATA[0]]></color>
+							<start_validity_date/>
+							<end_validity_date/>
+							<zones>
+								<zone type="rectangle">
+									<coordx type="number">70</coordx>
+									<coordy type="number">140</coordy>
+									<width type="number">1519</width>
+									<height type="number">2309</height>
+								</zone>
+							</zones>
+						</product>
+						<product id="40007">
+							<code><![CDATA[110300000]]></code>
+							<label><![CDATA[AOC (2) BLAYE CÔTES DE BORDEAUX "CHÂTEAU LA ROSERAIE" 2014*]]></label>
+							<description><![CDATA[75 cl. Le L : 8,79 €.
+Pour l’achat de 2 produits strictement identiques (même code-barres), bénéficiez d’un  de 6,59 €.]]></description>
+							<category><![CDATA[Boisson avec alcool]]></category>
+							<price type="number">659</price>
+							<price_before_coupon type="number"/>
+							<price_crossed type="number"/>
+							<Reduction_euro type="number"/>
+							<Reduction_percent type="number"/>
+							<Avantage_euro type="number"/>
+							<Avantage_percent type="number"/>
+							<ecotaxe type="number">0</ecotaxe>
+							<image><![CDATA[images/Img_40007_16C004K_V1_Page_03_Image_0016.jpg]]></image>
+							<picto><![CDATA[images/Pic_40007_pop_100pcrembourseenTELsurle2epdt.png]]></picto>
+							<origin/>
+							<mention><![CDATA[* PRODUITS STRICTEMENT IDENTIQUES, MÊME CODE-BARRES. (2) APPELLATION D'ORIGINE CONTRÔLÉE. L’ABUS D’ALCOOL EST DANGEREUX POUR LA SANTÉ. À CONSOMMER AVEC MODÉRATION.]]></mention>
+							<packaging/>
+							<lowerprice type="number">0</lowerprice>
+							<color><![CDATA[0]]></color>
+							<start_validity_date/>
+							<end_validity_date/>
+							<zones>
+								<zone type="rectangle">
+									<coordx type="number">1669</coordx>
+									<coordy type="number">154</coordy>
+									<width type="number">1219</width>
+									<height type="number">3036</height>
+								</zone>
+							</zones>
+						</product>
+						<product id="40008">
+							<code><![CDATA[110300000]]></code>
+							<label><![CDATA[AOC (2) GRIGNAN LES ADHÉMAR "LES MATINES" 2015*]]></label>
+							<description><![CDATA[75 cl. Le L : 13,20 €.
+Pour l’achat de 2 produits strictement identiques (même code-barres), bénéficiez d’un  de 9,90 €.]]></description>
+							<category><![CDATA[Boisson avec alcool]]></category>
+							<price type="number">990</price>
+							<price_before_coupon type="number"/>
+							<price_crossed type="number"/>
+							<Reduction_euro type="number"/>
+							<Reduction_percent type="number"/>
+							<Avantage_euro type="number"/>
+							<Avantage_percent type="number"/>
+							<ecotaxe type="number">0</ecotaxe>
+							<image><![CDATA[images/Img_40008_pop_1.jpg]]></image>
+							<picto><![CDATA[images/Pic_40008_pop_100pcrembourseenTELsurle2epdt.png]]></picto>
+							<origin/>
+							<mention><![CDATA[* PRODUITS STRICTEMENT IDENTIQUES, MÊME CODE-BARRES. (2) APPELLATION D'ORIGINE CONTRÔLÉE. L’ABUS D’ALCOOL EST DANGEREUX POUR LA SANTÉ. À CONSOMMER AVEC MODÉRATION.]]></mention>
+							<packaging/>
+							<lowerprice type="number">0</lowerprice>
+							<color><![CDATA[0]]></color>
+							<start_validity_date/>
+							<end_validity_date/>
+							<zones>
+								<zone type="rectangle">
+									<coordx type="number">3007</coordx>
+									<coordy type="number">238</coordy>
+									<width type="number">1489</width>
+									<height type="number">3008</height>
+								</zone>
+							</zones>
+						</product>
+						<product id="40009">
+							<code><![CDATA[116200000]]></code>
+							<label><![CDATA[SHAMPOOING "PALMOLIVE"*]]></label>
+							<description><![CDATA[2 en 1 hydra balance, anti-pelliculaire usage fréquent, beauty gloss, cheveux colorés, fraîcheur et volume ou force et vitalité. 350 ml. Le L : 4,83 €.
+Pour l’achat de 2 produits strictement identiques (même
+code-barres), bénéficiez d’un  de 1,69 €.]]></description>
+							<category><![CDATA[Cheveu]]></category>
+							<price type="number">169</price>
+							<price_before_coupon type="number"/>
+							<price_crossed type="number"/>
+							<Reduction_euro type="number"/>
+							<Reduction_percent type="number"/>
+							<Avantage_euro type="number"/>
+							<Avantage_percent type="number"/>
+							<ecotaxe type="number">0</ecotaxe>
+							<image><![CDATA[images/Img_40009_16C004K_V1_Page_03_Image_0009.jpg, images/Img_40009_16C004K_V1_Page_03_Image_0010.jpg, images/Img_40009_16C004K_V1_Page_03_Image_0011.jpg, images/Img_40009_16C004K_V1_Page_03_Image_0012.jpg, images/Img_40009_16C004K_V1_Page_03_Image_0013.jpg, images/Img_40009_16C004K_V1_Page_03_Image_0014.jpg]]></image>
+							<picto><![CDATA[images/Pic_40009_pop_100pcrembourseenTELsurle2epdt.png]]></picto>
+							<origin/>
+							<mention><![CDATA[* PRODUITS STRICTEMENT IDENTIQUES, MÊME CODE-BARRES.]]></mention>
+							<packaging><![CDATA[L'UNITÉ]]></packaging>
+							<lowerprice type="number">0</lowerprice>
+							<color><![CDATA[0]]></color>
+							<start_validity_date/>
+							<end_validity_date/>
+							<zones>
+								<zone type="rectangle">
+									<coordx type="number">1758</coordx>
+									<coordy type="number">3848</coordy>
+									<width type="number">3057</width>
+									<height type="number">2924</height>
+								</zone>
+							</zones>
+						</product>
+						<product id="40010">
+							<code><![CDATA[116200000]]></code>
+							<label><![CDATA[SHAMPOOING SPÉCIAL NETTOYAGE HAUTE PRESSION (3)*]]></label>
+							<description><![CDATA[5 L. Le L : 1,30 €.
+Pour l'achat de 2 produits strictement identiques (même code-barres), bénéficiez d’un  de 6,50 €]]></description>
+							<category><![CDATA[Cheveu]]></category>
+							<price type="number">650</price>
+							<price_before_coupon type="number"/>
+							<price_crossed type="number"/>
+							<Reduction_euro type="number"/>
+							<Reduction_percent type="number"/>
+							<Avantage_euro type="number"/>
+							<Avantage_percent type="number"/>
+							<ecotaxe type="number">0</ecotaxe>
+							<image><![CDATA[images/Img_40010_16C004K_V1_Page_03_Image_0007.jpg]]></image>
+							<picto><![CDATA[images/Pic_40010_pop_100pcrembourseenTELsurle2epdt.png]]></picto>
+							<origin/>
+							<mention><![CDATA[* PRODUITS STRICTEMENT IDENTIQUES, MÊME CODE-BARRES. (3) PRODUIT DANGEREUX. RESPECTER LES PRÉCAUTIONS D'EMPLOI. INFLAMMABLE.]]></mention>
+							<packaging/>
+							<lowerprice type="number">0</lowerprice>
+							<color><![CDATA[0]]></color>
+							<start_validity_date/>
+							<end_validity_date/>
+							<zones>
+								<zone type="rectangle">
+									<coordx type="number">180</coordx>
+									<coordy type="number">7094</coordy>
+									<width type="number">2408</width>
+									<height type="number">2407</height>
+								</zone>
+							</zones>
+						</product>
+						<product id="40011">
+							<code><![CDATA[123200000]]></code>
+							<label><![CDATA[LITIÈRE POUR CHAT TRANQUILLE VÉGÉTALE*]]></label>
+							<description><![CDATA[Fibres éco-recyclées et biodégradables issues d'écarts non utilisés de la production céréales.
+4 L. Le L : 1,12 €.
+Pour l'achat de 2 produits strictement identiques (même code-barres), bénéficiez d’un  de 4,49 €.]]></description>
+							<category><![CDATA[Animalerie]]></category>
+							<price type="number">449</price>
+							<price_before_coupon type="number"/>
+							<price_crossed type="number"/>
+							<Reduction_euro type="number"/>
+							<Reduction_percent type="number"/>
+							<Avantage_euro type="number"/>
+							<Avantage_percent type="number"/>
+							<ecotaxe type="number">0</ecotaxe>
+							<image><![CDATA[images/Img_40011_16C004K_V1_Page_03_Image_0008.jpg]]></image>
+							<picto><![CDATA[images/Pic_40011_pop_100pcrembourseenTELsurle2epdt.png]]></picto>
+							<origin/>
+							<mention><![CDATA[* PRODUITS STRICTEMENT IDENTIQUES, MÊME CODE-BARRES.]]></mention>
+							<packaging/>
+							<lowerprice type="number">0</lowerprice>
+							<color><![CDATA[0]]></color>
+							<start_validity_date/>
+							<end_validity_date/>
+							<zones>
+								<zone type="rectangle">
+									<coordx type="number">2668</coordx>
+									<coordy type="number">6954</coordy>
+									<width type="number">2178</width>
+									<height type="number">2672</height>
+								</zone>
+							</zones>
+						</product>
+					</products>
+				</page>
+				<page id="4">
+					<number type="number">4</number>
+					<products>
+						<product id="40013">
+							<code><![CDATA[110400000]]></code>
+							<label><![CDATA[JAMBON RÔTI "LE PLUS BON" "PARMACOTTO"]]></label>
+							<description/>
+							<category><![CDATA[Frais]]></category>
+							<price type="number">895</price>
+							<price_before_coupon type="number"/>
+							<price_crossed type="number"/>
+							<Reduction_euro type="number"/>
+							<Reduction_percent type="number"/>
+							<Avantage_euro type="number"/>
+							<Avantage_percent type="number"/>
+							<ecotaxe type="number">0</ecotaxe>
+							<image><![CDATA[images/Img_40013_pop_2.jpg]]></image>
+							<picto><![CDATA[images/Pic_40013_]]></picto>
+							<origin><![CDATA[ORIGINE U.E]]></origin>
+							<mention/>
+							<packaging><![CDATA[LE KG]]></packaging>
+							<lowerprice type="number">0</lowerprice>
+							<color><![CDATA[0]]></color>
+							<start_validity_date/>
+							<end_validity_date/>
+							<zones>
+								<zone type="rectangle">
+									<coordx type="number">819</coordx>
+									<coordy type="number">28</coordy>
+									<width type="number">2758</width>
+									<height type="number">1959</height>
+								</zone>
+								<zone type="rectangle">
+									<coordx type="number">460</coordx>
+									<coordy type="number">7640</coordy>
+									<width type="number">1898</width>
+									<height type="number">672</height>
+								</zone>
+							</zones>
+						</product>
+						<product id="40014">
+							<code><![CDATA[110400000]]></code>
+							<label><![CDATA[JAMBON DE BAYONNE IGP* SANS OS 12 MOIS DE SÉCHAGE "MICHEL DUPUY"]]></label>
+							<description/>
+							<category><![CDATA[Frais]]></category>
+							<price type="number">1395</price>
+							<price_before_coupon type="number"/>
+							<price_crossed type="number"/>
+							<Reduction_euro type="number"/>
+							<Reduction_percent type="number"/>
+							<Avantage_euro type="number"/>
+							<Avantage_percent type="number"/>
+							<ecotaxe type="number">0</ecotaxe>
+							<image><![CDATA[images/Img_40014_pop_3.jpg]]></image>
+							<picto><![CDATA[images/Pic_40014_]]></picto>
+							<origin><![CDATA[ORIGINE FRANCE]]></origin>
+							<mention><![CDATA[*INDICATION GÉOGRAPHIQUE PROTÉGÉE.]]></mention>
+							<packaging><![CDATA[LE KG]]></packaging>
+							<lowerprice type="number">0</lowerprice>
+							<color><![CDATA[0]]></color>
+							<start_validity_date/>
+							<end_validity_date/>
+							<zones>
+								<zone type="rectangle">
+									<coordx type="number">2568</coordx>
+									<coordy type="number">7696</coordy>
+									<width type="number">2218</width>
+									<height type="number">574</height>
+								</zone>
+								<zone type="rectangle">
+									<coordx type="number">2528</coordx>
+									<coordy type="number">1763</coordy>
+									<width type="number">2308</width>
+									<height type="number">2309</height>
+								</zone>
+							</zones>
+						</product>
+						<product id="40015">
+							<code><![CDATA[110400000]]></code>
+							<label><![CDATA[ROSETTE DE LYON "CHAMBOST"]]></label>
+							<description/>
+							<category><![CDATA[Frais]]></category>
+							<price type="number">895</price>
+							<price_before_coupon type="number"/>
+							<price_crossed type="number"/>
+							<Reduction_euro type="number"/>
+							<Reduction_percent type="number"/>
+							<Avantage_euro type="number"/>
+							<Avantage_percent type="number"/>
+							<ecotaxe type="number">0</ecotaxe>
+							<image><![CDATA[images/Img_40015_pop_4.jpg]]></image>
+							<picto><![CDATA[images/Pic_40015_]]></picto>
+							<origin><![CDATA[TRANSFORMÉ EN FRANCE]]></origin>
+							<mention/>
+							<packaging><![CDATA[LE KG]]></packaging>
+							<lowerprice type="number">0</lowerprice>
+							<color><![CDATA[0]]></color>
+							<start_validity_date/>
+							<end_validity_date/>
+							<zones>
+								<zone type="rectangle">
+									<coordx type="number">2458</coordx>
+									<coordy type="number">4254</coordy>
+									<width type="number">2478</width>
+									<height type="number">3288</height>
+								</zone>
+								<zone type="rectangle">
+									<coordx type="number">450</coordx>
+									<coordy type="number">8409</coordy>
+									<width type="number">1908</width>
+									<height type="number">602</height>
+								</zone>
+							</zones>
+						</product>
+						<product id="40016">
+							<code><![CDATA[110400000]]></code>
+							<label><![CDATA[PÂTÉ EN CROUTE AUX FILETS D'OIE "ROLAND MONTERRAT]]></label>
+							<description/>
+							<category><![CDATA[Frais]]></category>
+							<price type="number">585</price>
+							<price_before_coupon type="number"/>
+							<price_crossed type="number"/>
+							<Reduction_euro type="number"/>
+							<Reduction_percent type="number"/>
+							<Avantage_euro type="number"/>
+							<Avantage_percent type="number"/>
+							<ecotaxe type="number">0</ecotaxe>
+							<image><![CDATA[images/Img_40016_pop_5.jpg]]></image>
+							<picto><![CDATA[images/Pic_40016_]]></picto>
+							<origin><![CDATA[TRANSFORMÉ EN FRANCE]]></origin>
+							<mention/>
+							<packaging><![CDATA[LE KG]]></packaging>
+							<lowerprice type="number">0</lowerprice>
+							<color><![CDATA[0]]></color>
+							<start_validity_date/>
+							<end_validity_date/>
+							<zones>
+								<zone type="rectangle">
+									<coordx type="number">2588</coordx>
+									<coordy type="number">8367</coordy>
+									<width type="number">2248</width>
+									<height type="number">714</height>
+								</zone>
+								<zone type="rectangle">
+									<coordx type="number">500</coordx>
+									<coordy type="number">2770</coordy>
+									<width type="number">1868</width>
+									<height type="number">3652</height>
+								</zone>
+							</zones>
+						</product>
+					</products>
+				</page>
+				<page id="5">
+					<number type="number">5</number>
+					<products>
+						<product id="40017">
+							<code><![CDATA[110400000]]></code>
+							<label><![CDATA[SAUCISSON SEC PUR PORC LABEL ROUGE "MAISON DE SAVOIE"]]></label>
+							<description><![CDATA[250 g. Le kg : 15,80 €.
+Label rouge certifié par : Certipaq.]]></description>
+							<category><![CDATA[Frais]]></category>
+							<price type="number">395</price>
+							<price_before_coupon type="number"/>
+							<price_crossed type="number"/>
+							<Reduction_euro type="number"/>
+							<Reduction_percent type="number"/>
+							<Avantage_euro type="number"/>
+							<Avantage_percent type="number">30</Avantage_percent>
+							<ecotaxe type="number">0</ecotaxe>
+							<image><![CDATA[images/Img_40017_16C004K_V1_Page_05_Image_0005.jpg]]></image>
+							<picto><![CDATA[images/Pic_40017_pop_Labelrouge.png]]></picto>
+							<origin><![CDATA[ORIGINE U.E]]></origin>
+							<mention/>
+							<packaging/>
+							<lowerprice type="number">0</lowerprice>
+							<color><![CDATA[0]]></color>
+							<start_validity_date/>
+							<end_validity_date/>
+							<zones>
+								<zone type="rectangle">
+									<coordx type="number">160</coordx>
+									<coordy type="number">28</coordy>
+									<width type="number">1868</width>
+									<height type="number">2700</height>
+								</zone>
+							</zones>
+						</product>
+						<product id="40018">
+							<code><![CDATA[110400000]]></code>
+							<label><![CDATA[2 GÂTEAUX DE FOIE DE VOLAILLE SAUCE FINANCIÈRE "MAISON CHAPUIS"]]></label>
+							<description><![CDATA[420 g. Le kg : 5,71 €.]]></description>
+							<category><![CDATA[Frais]]></category>
+							<price type="number">240</price>
+							<price_before_coupon type="number"/>
+							<price_crossed type="number"/>
+							<Reduction_euro type="number"/>
+							<Reduction_percent type="number"/>
+							<Avantage_euro type="number"/>
+							<Avantage_percent type="number">30</Avantage_percent>
+							<ecotaxe type="number">0</ecotaxe>
+							<image><![CDATA[images/Img_40018_16C004K_V1_Page_05_Image_0004.jpg]]></image>
+							<picto><![CDATA[images/Pic_40018_]]></picto>
+							<origin><![CDATA[TRANSFORMÉ EN FRANCE]]></origin>
+							<mention/>
+							<packaging/>
+							<lowerprice type="number">0</lowerprice>
+							<color><![CDATA[0]]></color>
+							<start_validity_date/>
+							<end_validity_date/>
+							<zones>
+								<zone type="rectangle">
+									<coordx type="number">140</coordx>
+									<coordy type="number">2826</coordy>
+									<width type="number">2108</width>
+									<height type="number">2225</height>
+								</zone>
+							</zones>
+						</product>
+						<product id="40019">
+							<code><![CDATA[110400000]]></code>
+							<label><![CDATA[PLATEAU JAMBON SEC DE SAVOIE "MÔSSIEUR POLETTE"]]></label>
+							<description><![CDATA[160 g. Le kg : 18,44 €.]]></description>
+							<category><![CDATA[Frais]]></category>
+							<price type="number">295</price>
+							<price_before_coupon type="number"/>
+							<price_crossed type="number"/>
+							<Reduction_euro type="number"/>
+							<Reduction_percent type="number"/>
+							<Avantage_euro type="number"/>
+							<Avantage_percent type="number">30</Avantage_percent>
+							<ecotaxe type="number">0</ecotaxe>
+							<image><![CDATA[images/Img_40019_16C004K_V1_Page_05_Image_0011.jpg]]></image>
+							<picto><![CDATA[images/Pic_40019_]]></picto>
+							<origin><![CDATA[ORIGINE FRANCE]]></origin>
+							<mention/>
+							<packaging/>
+							<lowerprice type="number">0</lowerprice>
+							<color><![CDATA[0]]></color>
+							<start_validity_date/>
+							<end_validity_date/>
+							<zones>
+								<zone type="rectangle">
+									<coordx type="number">2228</coordx>
+									<coordy type="number">126</coordy>
+									<width type="number">2178</width>
+									<height type="number">4743</height>
+								</zone>
+							</zones>
+						</product>
+						<product id="40020">
+							<code><![CDATA[110400000]]></code>
+							<label><![CDATA[SALADES MEZZE PENNE CRUDITÉS FILET DE POULET "MIX"]]></label>
+							<description><![CDATA[320 g. Le kg : 12,34 €.]]></description>
+							<category><![CDATA[Frais]]></category>
+							<price type="number">395</price>
+							<price_before_coupon type="number"/>
+							<price_crossed type="number"/>
+							<Reduction_euro type="number"/>
+							<Reduction_percent type="number"/>
+							<Avantage_euro type="number"/>
+							<Avantage_percent type="number">30</Avantage_percent>
+							<ecotaxe type="number">0</ecotaxe>
+							<image><![CDATA[images/Img_40020_16C004K_V1_Page_05_Image_0002.jpg]]></image>
+							<picto><![CDATA[images/Pic_40020_]]></picto>
+							<origin><![CDATA[TRANSFORMÉ EN FRANCE]]></origin>
+							<mention/>
+							<packaging/>
+							<lowerprice type="number">0</lowerprice>
+							<color><![CDATA[0]]></color>
+							<start_validity_date/>
+							<end_validity_date/>
+							<zones>
+								<zone type="rectangle">
+									<coordx type="number">2388</coordx>
+									<coordy type="number">5093</coordy>
+									<width type="number">2178</width>
+									<height type="number">2281</height>
+								</zone>
+							</zones>
+						</product>
+						<product id="40021">
+							<code><![CDATA[110400000]]></code>
+							<label><![CDATA[QUENELLES LYONNAISES NATURE, VOLAILLE OU BROCHET "MAISON MALARTRE"]]></label>
+							<description><![CDATA[3 x 80 g (240 g).
+Le kg : 8,33 €.]]></description>
+							<category><![CDATA[Frais]]></category>
+							<price type="number">200</price>
+							<price_before_coupon type="number"/>
+							<price_crossed type="number"/>
+							<Reduction_euro type="number"/>
+							<Reduction_percent type="number"/>
+							<Avantage_euro type="number"/>
+							<Avantage_percent type="number">30</Avantage_percent>
+							<ecotaxe type="number">0</ecotaxe>
+							<image><![CDATA[images/Img_40021_16C004K_V1_Page_05_Image_0012.jpg, images/Img_40021_16C004K_V1_Page_05_Image_0013.jpg, images/Img_40021_16C004K_V1_Page_05_Image_0014.jpg]]></image>
+							<picto><![CDATA[images/Pic_40021_]]></picto>
+							<origin><![CDATA[TRANSFORMÉ EN FRANCE]]></origin>
+							<mention/>
+							<packaging><![CDATA[L'UNITÉ]]></packaging>
+							<lowerprice type="number">0</lowerprice>
+							<color><![CDATA[0]]></color>
+							<start_validity_date/>
+							<end_validity_date/>
+							<zones>
+								<zone type="rectangle">
+									<coordx type="number">160</coordx>
+									<coordy type="number">5191</coordy>
+									<width type="number">2168</width>
+									<height type="number">4561</height>
+								</zone>
+							</zones>
+						</product>
+						<product id="40022">
+							<code><![CDATA[110400000]]></code>
+							<label><![CDATA[SALADES MEZZE BOULGOUR CRUDITÉS SAUMON FUMÉ "MIX"]]></label>
+							<description><![CDATA[320 g. Le kg : 12,34 €.]]></description>
+							<category><![CDATA[Frais]]></category>
+							<price type="number">395</price>
+							<price_before_coupon type="number"/>
+							<price_crossed type="number"/>
+							<Reduction_euro type="number"/>
+							<Reduction_percent type="number"/>
+							<Avantage_euro type="number"/>
+							<Avantage_percent type="number">30</Avantage_percent>
+							<ecotaxe type="number">0</ecotaxe>
+							<image><![CDATA[images/Img_40022_16C004K_V1_Page_05_Image_0003.jpg]]></image>
+							<picto><![CDATA[images/Pic_40022_]]></picto>
+							<origin><![CDATA[TRANSFORMÉ EN FRANCE]]></origin>
+							<mention/>
+							<packaging/>
+							<lowerprice type="number">0</lowerprice>
+							<color><![CDATA[0]]></color>
+							<start_validity_date/>
+							<end_validity_date/>
+							<zones>
+								<zone type="rectangle">
+									<coordx type="number">2398</coordx>
+									<coordy type="number">7500</coordy>
+									<width type="number">2208</width>
+									<height type="number">2225</height>
+								</zone>
+							</zones>
+						</product>
+					</products>
+				</page>
+			</pages>
+			<shops>
+				<shop id="5301">
+					<startDate>1457478000</startDate>
+					<displayStartDate>1457218800</displayStartDate>
+					<displayEndDate>1458428399</displayEndDate>
+				</shop>
+				<shop id="5302">
+					<startDate>1457478000</startDate>
+					<displayStartDate>1457218800</displayStartDate>
+					<displayEndDate>1458428399</displayEndDate>
+				</shop>
+				<shop id="5303">
+					<startDate>1457478000</startDate>
+					<displayStartDate>1457218800</displayStartDate>
+					<displayEndDate>1458428399</displayEndDate>
+				</shop>
+				<shop id="5304">
+					<startDate>1457478000</startDate>
+					<displayStartDate>1457218800</displayStartDate>
+					<displayEndDate>1458428399</displayEndDate>
+				</shop>
+			</shops>
+		</catalog>
+	</operation>
+</root>

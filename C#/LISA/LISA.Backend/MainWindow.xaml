@@ -1,0 +1,49 @@
+﻿<Window x:Class="LISA.Backend.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:LISA.Backend"
+        Title="LISA" 
+        Height="600" 
+        Width="800"
+        MinHeight="800"
+        MinWidth="600"
+        WindowState="Normal"
+        WindowStartupLocation="CenterScreen">
+
+    <!--<Button
+            VerticalAlignment="Center"
+            HorizontalAlignment="Stretch"
+            HorizontalContentAlignment="Stretch">
+        --><!--<StackPanel Orientation="Vertical" 
+                    HorizontalAlignment="Center">
+            <Image Source="http://www.johnny-legend.fr/wp-content/uploads/2011/03/Interview-Johnny-Hallyday-Figaro-Madame.jpg" Width="50"/>
+            <TextBlock Text="Ceci est un bouton"/>
+        </StackPanel>--><!--
+        <Grid ShowGridLines="True">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="90*"/>
+            </Grid.ColumnDefinitions>
+
+            <Image Source="http://www.johnny-legend.fr/wp-content/uploads/2011/03/Interview-Johnny-Hallyday-Figaro-Madame.jpg" Width="50"/>
+            <TextBlock Grid.Column="1" Text="Ceci est un bouton"/>
+
+            <Grid Grid.Column="2" ShowGridLines="True" Background="Gray">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="90*"/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+            
+        </Grid>
+    </Button>-->
+
+    <Canvas x:Name="_Canvas" ClipToBounds="True" St Background="Red" Height="100" Width="200" 
+            IsHitTestVisible="False">
+        <Button x:Name="_Button" Content="Test" Canvas.Top="10" Click="_Button_Click"/>
+    </Canvas>
+
+
+</Window>

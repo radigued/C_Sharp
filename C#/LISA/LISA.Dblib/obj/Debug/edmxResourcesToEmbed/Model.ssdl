@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LISAModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Article">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdCategory" Type="bigint" />
+    <Property Name="Code" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Libelle" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="2000" />
+    <Property Name="Quantite" Type="smallint" Nullable="false" />
+    <Property Name="Unite" Type="nvarchar" MaxLength="20" />
+    <Property Name="ImportId" Type="bigint" />
+  </EntityType>
+  <EntityType Name="ArticleAttribut">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdArticle" Type="bigint" Nullable="false" />
+    <Property Name="IdAttribut" Type="bigint" Nullable="false" />
+    <Property Name="Valeur" Type="nvarchar" MaxLength="4000" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Attribut">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Libelle" Type="nvarchar" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Catalogue">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdOperation" Type="bigint" Nullable="false" />
+    <Property Name="Type" Type="nvarchar" MaxLength="200" />
+    <Property Name="Libelle" Type="nvarchar" MaxLength="200" />
+    <Property Name="Vitesse" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Largeur" Type="int" Nullable="false" />
+    <Property Name="Hauteur" Type="int" Nullable="false" />
+    <Property Name="ImportId" Type="bigint" />
+  </EntityType>
+  <EntityType Name="Categorie">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Libelle" Type="nvarchar" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Magasin">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Libelle" Type="nvarchar" MaxLength="200" />
+    <Property Name="ImportId" Type="bigint" />
+  </EntityType>
+  <EntityType Name="MagasinCatalogue">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdMagasin" Type="bigint" Nullable="false" />
+    <Property Name="IdCatalogue" Type="bigint" Nullable="false" />
+    <Property Name="DateDebut" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="DateFin" Type="datetime2" Precision="7" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Media">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdTypeMedia" Type="bigint" Nullable="false" />
+    <Property Name="IdArticle" Type="bigint" Nullable="false" />
+    <Property Name="Chemin" Type="nvarchar" MaxLength="4000" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Operation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Code" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Titre" Type="nvarchar" MaxLength="200" />
+    <Property Name="DateDebut" Type="datetime2" Precision="7" />
+    <Property Name="DateFin" Type="datetime2" Precision="7" />
+    <Property Name="ImportId" Type="bigint" />
+  </EntityType>
+  <EntityType Name="Page">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdCatalogue" Type="bigint" Nullable="false" />
+    <Property Name="Numero" Type="int" Nullable="false" />
+    <Property Name="ImportId" Type="bigint" />
+  </EntityType>
+  <EntityType Name="PageArticle">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdPage" Type="bigint" Nullable="false" />
+    <Property Name="IdArticle" Type="bigint" Nullable="false" />
+    <Property Name="ZoneHauteur" Type="int" Nullable="false" />
+    <Property Name="ZoneLargeur" Type="int" Nullable="false" />
+    <Property Name="ZoneCoordonnéesX" Type="int" Nullable="false" />
+    <Property Name="ZoneCoordonnéesY" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PrixCatalogueArticle">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdCatalogue" Type="bigint" Nullable="false" />
+    <Property Name="IdArticle" Type="bigint" Nullable="false" />
+    <Property Name="Prix" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="PrixAvantCoupon" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="PrixAvantCroise" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="ReductionEuro" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="ReductionPourcent" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="AvantageEuro" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="AvantagePourcent" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Ecotaxe" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="TypeMedia">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Libelle" Type="nvarchar" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Utilisateur">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Login" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="MotDePasse" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Discriminant" Type="smallint" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Article_Categorie">
+    <End Role="Categorie" Type="Self.Categorie" Multiplicity="0..1" />
+    <End Role="Article" Type="Self.Article" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categorie">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Article">
+        <PropertyRef Name="IdCategory" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ArticleAttribut_Article">
+    <End Role="Article" Type="Self.Article" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ArticleAttribut" Type="Self.ArticleAttribut" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Article">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ArticleAttribut">
+        <PropertyRef Name="IdArticle" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ArticleAttribut_Attribut">
+    <End Role="Attribut" Type="Self.Attribut" Multiplicity="1" />
+    <End Role="ArticleAttribut" Type="Self.ArticleAttribut" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Attribut">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ArticleAttribut">
+        <PropertyRef Name="IdAttribut" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Catalogue_Operation">
+    <End Role="Operation" Type="Self.Operation" Multiplicity="1" />
+    <End Role="Catalogue" Type="Self.Catalogue" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Operation">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Catalogue">
+        <PropertyRef Name="IdOperation" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MagasinCatalogue_Catalogue">
+    <End Role="Catalogue" Type="Self.Catalogue" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="MagasinCatalogue" Type="Self.MagasinCatalogue" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Catalogue">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MagasinCatalogue">
+        <PropertyRef Name="IdCatalogue" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MagasinCatalogue_Magasin">
+    <End Role="Magasin" Type="Self.Magasin" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="MagasinCatalogue" Type="Self.MagasinCatalogue" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Magasin">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MagasinCatalogue">
+        <PropertyRef Name="IdMagasin" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Media_Article">
+    <End Role="Article" Type="Self.Article" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Media" Type="Self.Media" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Article">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Media">
+        <PropertyRef Name="IdArticle" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Media_TypeMedia">
+    <End Role="TypeMedia" Type="Self.TypeMedia" Multiplicity="1" />
+    <End Role="Media" Type="Self.Media" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TypeMedia">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Media">
+        <PropertyRef Name="IdTypeMedia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Page_Catalogue">
+    <End Role="Catalogue" Type="Self.Catalogue" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Page" Type="Self.Page" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Catalogue">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Page">
+        <PropertyRef Name="IdCatalogue" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PageArticle_Article">
+    <End Role="Article" Type="Self.Article" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PageArticle" Type="Self.PageArticle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Article">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PageArticle">
+        <PropertyRef Name="IdArticle" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PageArticle_Page">
+    <End Role="Page" Type="Self.Page" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PageArticle" Type="Self.PageArticle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Page">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PageArticle">
+        <PropertyRef Name="IdPage" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PrixCatalogueArticle_Article">
+    <End Role="Article" Type="Self.Article" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PrixCatalogueArticle" Type="Self.PrixCatalogueArticle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Article">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PrixCatalogueArticle">
+        <PropertyRef Name="IdArticle" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PrixCatalogueArticle_Catalogue">
+    <End Role="Catalogue" Type="Self.Catalogue" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PrixCatalogueArticle" Type="Self.PrixCatalogueArticle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Catalogue">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PrixCatalogueArticle">
+        <PropertyRef Name="IdCatalogue" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="LISAModelStoreContainer">
+    <EntitySet Name="Article" EntityType="Self.Article" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ArticleAttribut" EntityType="Self.ArticleAttribut" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Attribut" EntityType="Self.Attribut" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Catalogue" EntityType="Self.Catalogue" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Categorie" EntityType="Self.Categorie" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Magasin" EntityType="Self.Magasin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MagasinCatalogue" EntityType="Self.MagasinCatalogue" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Media" EntityType="Self.Media" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Operation" EntityType="Self.Operation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Page" EntityType="Self.Page" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PageArticle" EntityType="Self.PageArticle" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PrixCatalogueArticle" EntityType="Self.PrixCatalogueArticle" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TypeMedia" EntityType="Self.TypeMedia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Utilisateur" EntityType="Self.Utilisateur" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Article_Categorie" Association="Self.FK_Article_Categorie">
+      <End Role="Categorie" EntitySet="Categorie" />
+      <End Role="Article" EntitySet="Article" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ArticleAttribut_Article" Association="Self.FK_ArticleAttribut_Article">
+      <End Role="Article" EntitySet="Article" />
+      <End Role="ArticleAttribut" EntitySet="ArticleAttribut" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ArticleAttribut_Attribut" Association="Self.FK_ArticleAttribut_Attribut">
+      <End Role="Attribut" EntitySet="Attribut" />
+      <End Role="ArticleAttribut" EntitySet="ArticleAttribut" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Catalogue_Operation" Association="Self.FK_Catalogue_Operation">
+      <End Role="Operation" EntitySet="Operation" />
+      <End Role="Catalogue" EntitySet="Catalogue" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MagasinCatalogue_Catalogue" Association="Self.FK_MagasinCatalogue_Catalogue">
+      <End Role="Catalogue" EntitySet="Catalogue" />
+      <End Role="MagasinCatalogue" EntitySet="MagasinCatalogue" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MagasinCatalogue_Magasin" Association="Self.FK_MagasinCatalogue_Magasin">
+      <End Role="Magasin" EntitySet="Magasin" />
+      <End Role="MagasinCatalogue" EntitySet="MagasinCatalogue" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Media_Article" Association="Self.FK_Media_Article">
+      <End Role="Article" EntitySet="Article" />
+      <End Role="Media" EntitySet="Media" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Media_TypeMedia" Association="Self.FK_Media_TypeMedia">
+      <End Role="TypeMedia" EntitySet="TypeMedia" />
+      <End Role="Media" EntitySet="Media" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Page_Catalogue" Association="Self.FK_Page_Catalogue">
+      <End Role="Catalogue" EntitySet="Catalogue" />
+      <End Role="Page" EntitySet="Page" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PageArticle_Article" Association="Self.FK_PageArticle_Article">
+      <End Role="Article" EntitySet="Article" />
+      <End Role="PageArticle" EntitySet="PageArticle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PageArticle_Page" Association="Self.FK_PageArticle_Page">
+      <End Role="Page" EntitySet="Page" />
+      <End Role="PageArticle" EntitySet="PageArticle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PrixCatalogueArticle_Article" Association="Self.FK_PrixCatalogueArticle_Article">
+      <End Role="Article" EntitySet="Article" />
+      <End Role="PrixCatalogueArticle" EntitySet="PrixCatalogueArticle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PrixCatalogueArticle_Catalogue" Association="Self.FK_PrixCatalogueArticle_Catalogue">
+      <End Role="Catalogue" EntitySet="Catalogue" />
+      <End Role="PrixCatalogueArticle" EntitySet="PrixCatalogueArticle" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

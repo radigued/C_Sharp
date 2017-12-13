@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LISA.CatalogImport", "LISA.CatalogImport\LISA.CatalogImport.csproj", "{7333D643-5C2E-4989-A216-B5C63DDF0054}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LISA.Backend", "LISA.Backend\LISA.Backend.csproj", "{267234DA-6F57-47EB-A039-E4C3224283F9}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "LISA.Database", "LISA.Database\LISA.Database.sqlproj", "{AED07A61-99EF-4BF1-A724-09474839539F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LISA.Dblib", "LISA.Dblib\LISA.Dblib.csproj", "{80FD20CF-B970-46A1-A9D5-21439F5EE7B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7333D643-5C2E-4989-A216-B5C63DDF0054}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7333D643-5C2E-4989-A216-B5C63DDF0054}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7333D643-5C2E-4989-A216-B5C63DDF0054}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7333D643-5C2E-4989-A216-B5C63DDF0054}.Release|Any CPU.Build.0 = Release|Any CPU
+		{267234DA-6F57-47EB-A039-E4C3224283F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{267234DA-6F57-47EB-A039-E4C3224283F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{267234DA-6F57-47EB-A039-E4C3224283F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{267234DA-6F57-47EB-A039-E4C3224283F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AED07A61-99EF-4BF1-A724-09474839539F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AED07A61-99EF-4BF1-A724-09474839539F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AED07A61-99EF-4BF1-A724-09474839539F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{AED07A61-99EF-4BF1-A724-09474839539F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AED07A61-99EF-4BF1-A724-09474839539F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AED07A61-99EF-4BF1-A724-09474839539F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{80FD20CF-B970-46A1-A9D5-21439F5EE7B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80FD20CF-B970-46A1-A9D5-21439F5EE7B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80FD20CF-B970-46A1-A9D5-21439F5EE7B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80FD20CF-B970-46A1-A9D5-21439F5EE7B2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CD4AFDC4-E092-40A8-9690-61A4041D3FDB}
+	EndGlobalSection
+EndGlobal

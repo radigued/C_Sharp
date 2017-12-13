@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a14f8e2499e548a7a74dbbfb38d4da22" Name="Diagram1" ZoomLevel="81">
+        <EntityTypeShape EntityType="LISAModel.Article" Width="1.5" PointX="6.375" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LISAModel.ArticleAttribut" Width="1.5" PointX="4.625" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LISAModel.Attribut" Width="1.5" PointX="2.875" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LISAModel.Catalogue" Width="1.5" PointX="6.375" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LISAModel.Categorie" Width="1.5" PointX="4.625" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LISAModel.Magasin" Width="1.5" PointX="8.25" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LISAModel.MagasinCatalogue" Width="1.5" PointX="6.5" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LISAModel.Média" Width="1.5" PointX="8.125" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LISAModel.Operation" Width="1.5" PointX="4.625" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LISAModel.Page" Width="1.5" PointX="8.125" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="LISAModel.PageArticle" Width="1.5" PointX="8.125" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="LISAModel.PrixCatalogueArticle" Width="1.5" PointX="6.375" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="LISAModel.TypeMedia" Width="1.5" PointX="9.875" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LISAModel.Utilisateur" Width="1.5" PointX="2" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="LISAModel.FK_Article_Categorie" ManuallyRouted="false" />
+        <AssociationConnector Association="LISAModel.FK_ArticleAttribut_Article" ManuallyRouted="false" />
+        <AssociationConnector Association="LISAModel.FK_Media_Article" ManuallyRouted="false" />
+        <AssociationConnector Association="LISAModel.FK_PageArticle_Article" ManuallyRouted="false" />
+        <AssociationConnector Association="LISAModel.FK_PrixCatalogueArticle_Article" ManuallyRouted="false" />
+        <AssociationConnector Association="LISAModel.FK_ArticleAttribut_Attribut" ManuallyRouted="false" />
+        <AssociationConnector Association="LISAModel.FK_Catalogue_Operation" ManuallyRouted="false" />
+        <AssociationConnector Association="LISAModel.FK_MagasinCatalogue_Catalogue" ManuallyRouted="false" />
+        <AssociationConnector Association="LISAModel.FK_Page_Catalogue" ManuallyRouted="false" />
+        <AssociationConnector Association="LISAModel.FK_PrixCatalogueArticle_Catalogue" ManuallyRouted="false" />
+        <AssociationConnector Association="LISAModel.FK_MagasinCatalogue_Magasin" ManuallyRouted="false" />
+        <AssociationConnector Association="LISAModel.FK_Media_TypeMedia" ManuallyRouted="false" />
+        <AssociationConnector Association="LISAModel.FK_PageArticle_Page" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

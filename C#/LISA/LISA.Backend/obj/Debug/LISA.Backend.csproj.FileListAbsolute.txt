@@ -1,0 +1,15 @@
+C:\Users\bdague\source\repos\LISA\LISA.Backend\bin\Debug\LISA.Backend.exe.config
+C:\Users\bdague\source\repos\LISA\LISA.Backend\bin\Debug\LISA.Backend.exe
+C:\Users\bdague\source\repos\LISA\LISA.Backend\bin\Debug\LISA.Backend.pdb
+C:\Users\bdague\source\repos\LISA\LISA.Backend\obj\Debug\LISA.Backend.csprojResolveAssemblyReference.cache
+C:\Users\bdague\source\repos\LISA\LISA.Backend\obj\Debug\MainWindow.g.cs
+C:\Users\bdague\source\repos\LISA\LISA.Backend\obj\Debug\App.g.cs
+C:\Users\bdague\source\repos\LISA\LISA.Backend\obj\Debug\LISA.Backend_MarkupCompile.cache
+C:\Users\bdague\source\repos\LISA\LISA.Backend\obj\Debug\LISA.Backend_MarkupCompile.lref
+C:\Users\bdague\source\repos\LISA\LISA.Backend\obj\Debug\MainWindow.baml
+C:\Users\bdague\source\repos\LISA\LISA.Backend\obj\Debug\LISA.Backend.g.resources
+C:\Users\bdague\source\repos\LISA\LISA.Backend\obj\Debug\LISA.Backend.Properties.Resources.resources
+C:\Users\bdague\source\repos\LISA\LISA.Backend\obj\Debug\LISA.Backend.csproj.GenerateResource.Cache
+C:\Users\bdague\source\repos\LISA\LISA.Backend\obj\Debug\LISA.Backend.csproj.CoreCompileInputs.cache
+C:\Users\bdague\source\repos\LISA\LISA.Backend\obj\Debug\LISA.Backend.exe
+C:\Users\bdague\source\repos\LISA\LISA.Backend\obj\Debug\LISA.Backend.pdb
