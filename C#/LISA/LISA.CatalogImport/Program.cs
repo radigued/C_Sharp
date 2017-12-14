@@ -105,6 +105,13 @@ namespace LISA.CatalogImport
                             foreach (XElement pageElement in pagesElement.Elements())
                             {
                                 Page page = ParsePageElement(pageElement, entities, catalogue);
+
+                                XElement productsElement = pageElement.Element(XName.Get("products"));
+
+                                foreach (XElement productElement in productsElement.Elements())
+                                {
+                                    Article article = ParseArticleElement(productElement, entities);
+                                }
                             }
 
                             foreach (XElement shopElement in catalogElement.Descendants(XName.Get("shop")))
@@ -201,7 +208,7 @@ namespace LISA.CatalogImport
             }
             else
             {
-                //TODO ?
+                entities.Catalogues.Remove(result);
             }
 
             return result;
@@ -304,14 +311,40 @@ namespace LISA.CatalogImport
 
         #region Parse Articles
 
-        private static Article ParseArticleElement(XElement articleElement, LISAEntities entities)
+        private static Article ParseArticleElement(XElement productElement, LISAEntities entities)
         {
             Article result = new Article();
 
+            long articleId = long.Parse(productElement.Attribute(XName.Get("id")).Value);
+            string articleCode = productElement.Element(XName.Get("code")).Value;
+            string articleLabel = productElement.Element(XName.Get("label")).Value;
+            string articleDescription = productElement.Element(XName.Get("description")).Value;
+            string articleUnite = productElement.Element(XName.Get("packaging")).Value;
+
+            result = entities.Articles.FirstOrDefault(c => c.ImportId == articleId);
+        
+            if (result == null)
+            {
+                result = new Article()
+                {
+                    ImportId = articleId,
+                    Code = articleCode,
+                    Libelle = articleLabel,
+                    Description = articleDescription,
+                    Unite = articleUnite
+                };
+        
+                entities.Articles.Add(result);
+            }
+            else
+            {
+                entities.Articles.Remove(result);
+            }
+        
             return result;
         }
+    }
 
 
         #endregion
-    }
 }

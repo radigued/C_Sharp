@@ -33,3 +33,17 @@ C:\Users\Damien\Desktop\C#_17_12_11\LISA\LISA.CatalogImport\obj\Debug\LISA.Catal
 C:\Users\Damien\Desktop\C#_17_12_11\LISA\LISA.CatalogImport\obj\Debug\LISA.CatalogImport.csproj.CoreCompileInputs.cache
 C:\Users\Damien\Desktop\C#_17_12_11\LISA\LISA.CatalogImport\obj\Debug\LISA.CatalogImport.exe
 C:\Users\Damien\Desktop\C#_17_12_11\LISA\LISA.CatalogImport\obj\Debug\LISA.CatalogImport.pdb
+C:\Users\Damien\source\repos\C_Sharp\C#\LISA\LISA.CatalogImport\bin\Debug\LISA.CatalogImport.exe.config
+C:\Users\Damien\source\repos\C_Sharp\C#\LISA\LISA.CatalogImport\bin\Debug\LISA.CatalogImport.exe
+C:\Users\Damien\source\repos\C_Sharp\C#\LISA\LISA.CatalogImport\bin\Debug\LISA.CatalogImport.pdb
+C:\Users\Damien\source\repos\C_Sharp\C#\LISA\LISA.CatalogImport\bin\Debug\EntityFramework.dll
+C:\Users\Damien\source\repos\C_Sharp\C#\LISA\LISA.CatalogImport\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Damien\source\repos\C_Sharp\C#\LISA\LISA.CatalogImport\bin\Debug\LISA.Dblib.dll
+C:\Users\Damien\source\repos\C_Sharp\C#\LISA\LISA.CatalogImport\bin\Debug\LISA.Dblib.pdb
+C:\Users\Damien\source\repos\C_Sharp\C#\LISA\LISA.CatalogImport\bin\Debug\LISA.Dblib.dll.config
+C:\Users\Damien\source\repos\C_Sharp\C#\LISA\LISA.CatalogImport\bin\Debug\EntityFramework.xml
+C:\Users\Damien\source\repos\C_Sharp\C#\LISA\LISA.CatalogImport\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Damien\source\repos\C_Sharp\C#\LISA\LISA.CatalogImport\obj\Debug\LISA.CatalogImport.csprojResolveAssemblyReference.cache
+C:\Users\Damien\source\repos\C_Sharp\C#\LISA\LISA.CatalogImport\obj\Debug\LISA.CatalogImport.csproj.CoreCompileInputs.cache
+C:\Users\Damien\source\repos\C_Sharp\C#\LISA\LISA.CatalogImport\obj\Debug\LISA.CatalogImport.exe
+C:\Users\Damien\source\repos\C_Sharp\C#\LISA\LISA.CatalogImport\obj\Debug\LISA.CatalogImport.pdb
