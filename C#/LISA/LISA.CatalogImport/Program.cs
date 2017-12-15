@@ -76,6 +76,7 @@ namespace LISA.CatalogImport
             Console.ReadKey();
 #endif
         }
+
         #region Fonction d'import XML
         private static void ImportXMLFile(string filePath)
         {
@@ -343,8 +344,52 @@ namespace LISA.CatalogImport
         
             return result;
         }
-    }
-
 
         #endregion
+
+        #region Parse PrixCatalogueArticle
+
+        private static PrixCatalogueArticle ParsePriceCategoryProduct(XElement productElement, LISAEntities entities, Catalogue catalogue, Article article)
+        {
+            PrixCatalogueArticle result = null;
+
+            long articleCategorieId = long.Parse(productElement.Element(XName.Get("id")).Value);
+            decimal articleCategoriePrix = decimal.Parse(productElement.Element(XName.Get("price")).Value);
+            decimal articleCategoriePrixAvantCoupon = decimal.Parse(productElement.Element(XName.Get("price_before_coupon")).Value);
+            decimal articleCategoriePrixAvantCroise = decimal.Parse(productElement.Element(XName.Get("price_crossed")).Value);
+            decimal articleCategorieReductionEuro = decimal.Parse(productElement.Element(XName.Get("Reduction_euro")).Value);
+            int articleCategorieReductionPourcent = int.Parse(productElement.Element(XName.Get("Reduction_percent")).Value);
+            decimal articleCategorieAvantageEuro = decimal.Parse(productElement.Element(XName.Get("Avantage_euro")).Value);
+            int articleCategorieAvantagePourcent = int.Parse(productElement.Element(XName.Get("Avantage_percent")).Value);
+            decimal articleCategorieEcotaxe = decimal.Parse(productElement.Element(XName.Get("ecotaxe")).Value);
+
+
+            result = entities.PrixCatalogueArticles.FirstOrDefault(a => a.IdCatalogue == catalogue.Id && a.IdArticle == article.Id);
+
+            if (result == null)
+            {
+                result = new PrixCatalogueArticle()
+                {
+                    Article = article,
+                    Catalogue = catalogue,
+                    Prix = articleCategoriePrix,
+                    PrixAvantCoupon = articleCategoriePrixAvantCoupon,
+                    PrixAvantCroise = articleCategoriePrixAvantCroise,
+                    ReductionEuro = articleCategorieReductionEuro,
+                    ReductionPourcent = articleCategorieReductionPourcent,
+                    AvantageEuro = articleCategorieAvantageEuro,
+                    AvantagePourcent = articleCategorieAvantagePourcent,
+                    Ecotaxe = articleCategorieEcotaxe
+                };
+
+                entities.PrixCatalogueArticles.Add(result);
+            }
+
+            return result;
+        }
+
+        #endregion
+
+
+    }
 }
