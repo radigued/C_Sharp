@@ -390,6 +390,76 @@ namespace LISA.CatalogImport
 
         #endregion
 
+        #region Parse PageArticle
+        private static PageArticle ParsePageArticleElement(XElement pageArticleElement, Page page, Article article, LISAEntities entities)
+        {
+            PageArticle result = null;
+
+            int coordX = short.Parse(pageArticleElement.Element(XName.Get("")).Value);
+            int coordY = short.Parse(pageArticleElement.Element(XName.Get("")).Value);
+            int width = short.Parse(pageArticleElement.Element(XName.Get("")).Value);
+            int height = short.Parse(pageArticleElement.Element(XName.Get("")).Value);
+
+            result = entities.PageArticles.FirstOrDefault(pa => pa.Article.ImportId == article.ImportId && result.Page.ImportId == page.ImportId);
+
+            result = new PageArticle()
+            {
+                Article = article,
+                Page = page,
+                ZoneCoordonnéesX = coordX,
+                ZoneCoordonnéesY = coordY,
+                ZoneLargeur = width,
+                ZoneHauteur = height
+            };
+
+
+            return entities.PageArticles.Add(result); ;
+
+        }
+
+        #endregion
+
+        #region Parse Attributs
+        private static Attribut ParseAttributElement(XElement attributeElement, LISAEntities entities)
+        {
+            Attribut result = new Attribut();
+
+            long attributeId = long.Parse(attributeElement.Attribute(XName.Get("id")).Value);
+            string attributeLabel = attributeElement.Element(XName.Get("label")).Value;
+
+            result = new Attribut()
+            {
+                Libelle = attributeLabel
+            };
+            entities.Attributs.Add(result);
+
+            return result;
+        }
+        #endregion
+
+        #region Parse ArticleAttribut
+        private static ArticleAttribut ParseArticleAttributElement(XElement articleAttributElement, Article article, Attribut attribut, LISAEntities entities)
+        {
+            ArticleAttribut result = null;
+
+            string articleAttributValue = articleAttributElement.Element(XName.Get("value")).Value;
+
+            result = entities.ArticleAttributs.FirstOrDefault(aa => aa.Article.ImportId == article.ImportId && result.Attribut.Id == attribut.Id);
+
+            result = new ArticleAttribut()
+            {
+                Article = article,
+                Attribut = attribut,
+                Valeur = articleAttributValue
+            };
+
+
+            return entities.ArticleAttributs.Add(result); ;
+
+        }
+
+        #endregion
+
 
     }
 }
