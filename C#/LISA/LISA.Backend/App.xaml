@@ -32,6 +32,13 @@
                 <Setter Property="Width" Value="200"/>
             </Style.Setters>
         </Style>
+
+        <Style TargetType="ListBoxItem">
+            <Style.Setters>
+                <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            </Style.Setters>
+        </Style>
         
     </Application.Resources>
 </Application>

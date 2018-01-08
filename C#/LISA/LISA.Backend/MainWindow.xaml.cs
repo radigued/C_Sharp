@@ -35,14 +35,58 @@ namespace LISA.Backend
             _ListBoxShops.ItemsSource = App.Entities.Magasins.Local;
         }
 
+        #region Methods
+
+        #region Menu
+
+        #region File
+
         private void _MenuItemExit_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
 
-        private void _ListBoxShops_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void _MenuItemSave_Click(object sender, RoutedEventArgs e)
         {
 
+            if (App.Entities.ChangeTracker.HasChanges())
+            {
+                App.Entities.SaveChanges();
+            }
+
         }
+        private void _MenuItemRefresh_Click(object sender, RoutedEventArgs e)
+        {
+            App.Entities.Magasins.ToList();
+        }
+
+
+
+        #endregion
+
+        #region Edit
+
+        private void _MenuItemAdd_Click(object sender, RoutedEventArgs e)
+        {
+            Magasin mag = new Magasin() { Libelle = "Nouveau" };
+            App.Entities.Magasins.Add(mag);
+            _ListBoxShops.SelectedItem = mag;
+        }
+
+        private void _MenuItemDelete_Click(object sender, RoutedEventArgs e)
+        {
+            Magasin mag = _ListBoxShops.SelectedItem as Magasin;
+            if (mag != null)
+            {
+                App.Entities.Magasins.Remove(mag);
+            }
+        }
+
+        #endregion
+
+        #endregion
+
+        #endregion
+
     }
 }

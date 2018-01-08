@@ -17,12 +17,15 @@
 
         <Menu Grid.Row="0">
             <MenuItem Header="Fichier">
-                <MenuItem Header="Rafraîchir"/>
-                <MenuItem Header="Sauvegarder"/>
+                <MenuItem x:Name="_MenuItemRefresh" Header="Rafraîchir" Click="_MenuItemRefresh_Click"/>
+                <MenuItem x:Name="_MenuItemSave" Header="Sauvegarder" Click="_MenuItemSave_Click"/>
                 <Separator/>
                 <MenuItem x:Name="_MenuItemExit" Header="Quitter" Click="_MenuItemExit_Click"/>
             </MenuItem>
-            
+            <MenuItem Header="Édition">
+                <MenuItem x:Name="_MenuItemAdd" Header="Ajouter" Click="_MenuItemAdd_Click"/>
+                <MenuItem x:Name="_MenuItemDelete" Header="Supprimer" Click="_MenuItemDelete_Click"/>
+            </MenuItem>
         </Menu>
         
         <!-- Partie principale de l'application -->
@@ -34,14 +37,22 @@
             
             <!-- Liste des magasins -->
             <ListBox x:Name="_ListBoxShops" 
-                     Grid.Column="0" 
-                     DisplayMemberPath="Libelle"
-                     SelectionChanged="_ListBoxShops_SelectionChanged">
+                     Grid.Column="0">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Vertical" Background="Aquamarine">
+                            <TextBlock Text="{Binding Path=Libelle}"/>
+                            <TextBlock Text=" - "/>
+                            <TextBlock Text="{Binding Path=ImportId}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
                 
             </ListBox>
 
             <!-- Partie Formulaire d'un magasin -->
-            <Grid Grid.Column="1">
+            <Grid x:Name="_MagasinFormGrid" Grid.Column="1"
+                  DataContext="{Binding SelectedItem, ElementName=_ListBoxShops}">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
@@ -56,8 +67,8 @@
                 <TextBlock Grid.Row="0" Grid.Column="0" Text="Libellé :" Style="{StaticResource TextBlockMandatoryLISAStyle}"/>
                 <TextBlock Grid.Row="1" Grid.Column="0" Text="ID import :" Style="{StaticResource TextBlockLISAStyle}"/>
 
-                <TextBox x:Name="_TextBoxLabel" Grid.Row="0" Grid.Column="1" Style="{StaticResource TextBoxLISAStyle}"/>
-                <TextBox x:Name="_TextBoxImportID" Grid.Row="1" Grid.Column="1" Style="{StaticResource TextBoxLISAStyle}"/>
+                <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Path=Libelle, UpdateSourceTrigger=PropertyChanged}" Style="{StaticResource TextBoxLISAStyle}"/>
+                <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=ImportId, UpdateSourceTrigger=PropertyChanged}" Style="{StaticResource TextBoxLISAStyle}"/>
             </Grid>
             
         </Grid>
