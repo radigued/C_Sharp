@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using LISA.Dblib;
 
 namespace LISA.Backend
 {
@@ -23,8 +24,25 @@ namespace LISA.Backend
         public MainWindow()
         {
             InitializeComponent();
-        }
-        
 
+            //Exemple d'abonnement à un évènement en C#
+            //_MenuItemExit.Click += _MenuItemExit_Click;
+
+            //Charge dans Entity Framework les magasins
+            App.Entities.Magasins.ToList();
+
+            //Affiche les données chargés dans EF(vue local)
+            _ListBoxShops.ItemsSource = App.Entities.Magasins.Local;
+        }
+
+        private void _MenuItemExit_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void _ListBoxShops_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

@@ -20,7 +20,7 @@
                 <MenuItem Header="Rafraîchir"/>
                 <MenuItem Header="Sauvegarder"/>
                 <Separator/>
-                <MenuItem Header="Quitter"/>
+                <MenuItem x:Name="_MenuItemExit" Header="Quitter" Click="_MenuItemExit_Click"/>
             </MenuItem>
             
         </Menu>
@@ -33,7 +33,10 @@
             </Grid.ColumnDefinitions>
             
             <!-- Liste des magasins -->
-            <ListBox Grid.Column="0">
+            <ListBox x:Name="_ListBoxShops" 
+                     Grid.Column="0" 
+                     DisplayMemberPath="Libelle"
+                     SelectionChanged="_ListBoxShops_SelectionChanged">
                 
             </ListBox>
 
@@ -53,8 +56,8 @@
                 <TextBlock Grid.Row="0" Grid.Column="0" Text="Libellé :" Style="{StaticResource TextBlockMandatoryLISAStyle}"/>
                 <TextBlock Grid.Row="1" Grid.Column="0" Text="ID import :" Style="{StaticResource TextBlockLISAStyle}"/>
 
-                <TextBox Grid.Row="0" Grid.Column="1" Style="{StaticResource TextBoxLISAStyle}"/>
-                <TextBox Grid.Row="1" Grid.Column="1" Style="{StaticResource TextBoxLISAStyle}"/>
+                <TextBox x:Name="_TextBoxLabel" Grid.Row="0" Grid.Column="1" Style="{StaticResource TextBoxLISAStyle}"/>
+                <TextBox x:Name="_TextBoxImportID" Grid.Row="1" Grid.Column="1" Style="{StaticResource TextBoxLISAStyle}"/>
             </Grid>
             
         </Grid>

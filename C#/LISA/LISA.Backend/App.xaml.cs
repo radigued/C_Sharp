@@ -17,13 +17,34 @@ namespace LISA.Backend
 
         #region Fields
 
-        private LISAEntities _Entities;
+        private static LISAEntities _Entities;
 
         #endregion
 
         #region Properties
 
-        public LISAEntities Entiites => _Entities;
+        public static LISAEntities Entities => _Entities;
+
+        #endregion
+
+        #region Methods
+
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            base.OnStartup(e);
+
+            try
+            {
+                _Entities = new LISAEntities();
+                _Entities.Database.Connection.Open();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erreur", "Impossible de joindre la base de données" + Environment.NewLine +
+                    ex.ToString());
+                this.Shutdown();
+            }
+        }
 
         #endregion
     }

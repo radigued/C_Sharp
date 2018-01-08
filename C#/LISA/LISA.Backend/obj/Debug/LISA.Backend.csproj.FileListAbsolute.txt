@@ -29,3 +29,12 @@ C:\Users\Damien\source\repos\C_Sharp\C#\LISA\LISA.Backend\obj\Debug\LISA.Backend
 C:\Users\Damien\source\repos\C_Sharp\C#\LISA\LISA.Backend\obj\Debug\LISA.Backend.csproj.GenerateResource.Cache
 C:\Users\Damien\source\repos\C_Sharp\C#\LISA\LISA.Backend\obj\Debug\LISA.Backend.csproj.CoreCompileInputs.cache
 C:\Users\Damien\source\repos\C_Sharp\C#\LISA\LISA.Backend\obj\Debug\App.baml
+C:\Users\Damien\source\repos\C_Sharp\C#\LISA\LISA.Backend\bin\Debug\EntityFramework.dll
+C:\Users\Damien\source\repos\C_Sharp\C#\LISA\LISA.Backend\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Damien\source\repos\C_Sharp\C#\LISA\LISA.Backend\bin\Debug\LISA.Dblib.dll
+C:\Users\Damien\source\repos\C_Sharp\C#\LISA\LISA.Backend\bin\Debug\LISA.Dblib.pdb
+C:\Users\Damien\source\repos\C_Sharp\C#\LISA\LISA.Backend\bin\Debug\LISA.Dblib.dll.config
+C:\Users\Damien\source\repos\C_Sharp\C#\LISA\LISA.Backend\bin\Debug\EntityFramework.xml
+C:\Users\Damien\source\repos\C_Sharp\C#\LISA\LISA.Backend\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Damien\source\repos\C_Sharp\C#\LISA\LISA.Backend\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\Damien\source\repos\C_Sharp\C#\LISA\LISA.Backend\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
