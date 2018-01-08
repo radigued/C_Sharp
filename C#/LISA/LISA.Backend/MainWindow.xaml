@@ -5,45 +5,62 @@
         Title="LISA" 
         Height="600" 
         Width="800"
-        MinHeight="800"
-        MinWidth="600"
         WindowState="Normal"
         WindowStartupLocation="CenterScreen">
 
-    <!--<Button
-            VerticalAlignment="Center"
-            HorizontalAlignment="Stretch"
-            HorizontalContentAlignment="Stretch">
-        --><!--<StackPanel Orientation="Vertical" 
-                    HorizontalAlignment="Center">
-            <Image Source="http://www.johnny-legend.fr/wp-content/uploads/2011/03/Interview-Johnny-Hallyday-Figaro-Madame.jpg" Width="50"/>
-            <TextBlock Text="Ceci est un bouton"/>
-        </StackPanel>--><!--
-        <Grid ShowGridLines="True">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Menu Grid.Row="0">
+            <MenuItem Header="Fichier">
+                <MenuItem Header="Rafraîchir"/>
+                <MenuItem Header="Sauvegarder"/>
+                <Separator/>
+                <MenuItem Header="Quitter"/>
+            </MenuItem>
+            
+        </Menu>
+        
+        <!-- Partie principale de l'application -->
+        <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="200"/>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="90*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
+            
+            <!-- Liste des magasins -->
+            <ListBox Grid.Column="0">
+                
+            </ListBox>
 
-            <Image Source="http://www.johnny-legend.fr/wp-content/uploads/2011/03/Interview-Johnny-Hallyday-Figaro-Madame.jpg" Width="50"/>
-            <TextBlock Grid.Column="1" Text="Ceci est un bouton"/>
-
-            <Grid Grid.Column="2" ShowGridLines="True" Background="Gray">
+            <!-- Partie Formulaire d'un magasin -->
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="200"/>
                     <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="90*"/>
+                    <ColumnDefinition Style="{StaticResource ColumnDefinitionFormDataLISAStyle}"/>
+                    <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="Libellé :" Style="{StaticResource TextBlockMandatoryLISAStyle}"/>
+                <TextBlock Grid.Row="1" Grid.Column="0" Text="ID import :" Style="{StaticResource TextBlockLISAStyle}"/>
+
+                <TextBox Grid.Row="0" Grid.Column="1" Style="{StaticResource TextBoxLISAStyle}"/>
+                <TextBox Grid.Row="1" Grid.Column="1" Style="{StaticResource TextBoxLISAStyle}"/>
             </Grid>
             
         </Grid>
-    </Button>-->
-
-    <Canvas x:Name="_Canvas" ClipToBounds="True" St Background="Red" Height="100" Width="200" 
-            IsHitTestVisible="False">
-        <Button x:Name="_Button" Content="Test" Canvas.Top="10" Click="_Button_Click"/>
-    </Canvas>
+        
+        
+    </Grid>
 
 
 </Window>

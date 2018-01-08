@@ -1,0 +1,9 @@
+C:\Users\Damien\source\repos\C_Sharp\C#\LISA\LISA.Database\bin\Debug\LISA.Database.dacpac
+C:\Users\Damien\source\repos\C_Sharp\C#\LISA\LISA.Database\bin\Debug\LISA.Database.dll
+C:\Users\Damien\source\repos\C_Sharp\C#\LISA\LISA.Database\bin\Debug\LISA.Database.pdb
+C:\Users\Damien\source\repos\C_Sharp\C#\LISA\LISA.Database\obj\Debug\Model.xml
+C:\Users\Damien\source\repos\C_Sharp\C#\LISA\LISA.Database\obj\Debug\refactor.xml
+C:\Users\Damien\source\repos\C_Sharp\C#\LISA\LISA.Database\obj\Debug\postdeploy.sql
+C:\Users\Damien\source\repos\C_Sharp\C#\LISA\LISA.Database\obj\Debug\predeploy.sql
+C:\Users\Damien\source\repos\C_Sharp\C#\LISA\LISA.Database\obj\Debug\LISA.Database.dll
+C:\Users\Damien\source\repos\C_Sharp\C#\LISA\LISA.Database\obj\Debug\LISA.Database.pdb

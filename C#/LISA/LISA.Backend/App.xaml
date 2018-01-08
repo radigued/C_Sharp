@@ -4,6 +4,34 @@
              xmlns:local="clr-namespace:LISA.Backend"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+
+        <Style TargetType="TextBlock" x:Key="TextBlockLISAStyle">
+            <Style.Setters>
+                <!-- Applique une marge sur les 4 côtés -->
+                <Setter Property="Margin" Value="5,0,5,0"/>
+                <Setter Property="Foreground" Value="DarkGoldenrod"/>
+                <Setter Property="VerticalAlignment" Value="Center"/>
+            </Style.Setters>
+        </Style>
+
+        <Style TargetType="TextBlock" x:Key="TextBlockMandatoryLISAStyle" BasedOn="{StaticResource TextBlockLISAStyle}">
+            <Style.Setters>
+                <Setter Property="FontWeight" Value="Bold"/>
+                <Setter Property="Foreground" Value="OrangeRed"/>
+            </Style.Setters>
+        </Style>
+
+        <Style TargetType="TextBox" x:Key="TextBoxLISAStyle">
+            <Style.Setters>
+                <Setter Property="Margin" Value="2"/>
+            </Style.Setters>
+        </Style>
+
+        <Style TargetType="ColumnDefinition" x:Key="ColumnDefinitionFormDataLISAStyle">
+            <Style.Setters>
+                <Setter Property="Width" Value="200"/>
+            </Style.Setters>
+        </Style>
+        
     </Application.Resources>
 </Application>

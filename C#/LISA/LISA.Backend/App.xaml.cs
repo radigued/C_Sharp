@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using LISA.Dblib;
 
 namespace LISA.Backend
 {
@@ -13,5 +14,17 @@ namespace LISA.Backend
     /// </summary>
     public partial class App : Application
     {
+
+        #region Fields
+
+        private LISAEntities _Entities;
+
+        #endregion
+
+        #region Properties
+
+        public LISAEntities Entiites => _Entities;
+
+        #endregion
     }
 }

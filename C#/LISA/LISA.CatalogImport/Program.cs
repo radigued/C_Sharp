@@ -436,7 +436,7 @@ namespace LISA.CatalogImport
             return result;
         }
         #endregion
-
+        
         #region Parse ArticleAttribut
         private static ArticleAttribut ParseArticleAttributElement(XElement articleAttributElement, Article article, Attribut attribut, LISAEntities entities)
         {

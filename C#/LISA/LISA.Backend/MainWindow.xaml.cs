@@ -24,10 +24,7 @@ namespace LISA.Backend
         {
             InitializeComponent();
         }
+        
 
-        private void _Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }
