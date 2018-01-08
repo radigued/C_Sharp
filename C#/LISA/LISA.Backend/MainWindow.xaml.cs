@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using LISA.Dblib;
+using System.Data.Entity.Infrastructure;
 
 namespace LISA.Backend
 {
@@ -37,6 +38,8 @@ namespace LISA.Backend
 
         #region Methods
 
+        
+
         #region Menu
 
         #region File
@@ -57,7 +60,7 @@ namespace LISA.Backend
         }
         private void _MenuItemRefresh_Click(object sender, RoutedEventArgs e)
         {
-            App.Entities.Magasins.ToList();
+            RefreshData();
         }
 
 
@@ -85,6 +88,8 @@ namespace LISA.Backend
         #endregion
 
         #endregion
+
+
 
         #endregion
 

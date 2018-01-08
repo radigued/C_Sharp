@@ -14,17 +14,18 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-
+    
+        <!--Menu principal de l'application--!>
         <Menu Grid.Row="0">
-            <MenuItem Header="Fichier">
-                <MenuItem x:Name="_MenuItemRefresh" Header="Rafraîchir" Click="_MenuItemRefresh_Click"/>
-                <MenuItem x:Name="_MenuItemSave" Header="Sauvegarder" Click="_MenuItemSave_Click"/>
-                <Separator/>
-                <MenuItem x:Name="_MenuItemExit" Header="Quitter" Click="_MenuItemExit_Click"/>
-            </MenuItem>
-            <MenuItem Header="Édition">
-                <MenuItem x:Name="_MenuItemAdd" Header="Ajouter" Click="_MenuItemAdd_Click"/>
-                <MenuItem x:Name="_MenuItemDelete" Header="Supprimer" Click="_MenuItemDelete_Click"/>
+            <MenuItem Header="_Fichier">
+                <MenuItem x:Name="_MenuItemRefresh" Header="_Rafraîchir"     Click="_MenuItemRefresh_Click"/>
+                <MenuItem x:Name="_MenuItemSave"    Header="_Sauvegarder"    Click="_MenuItemSave_Click"/>
+                <Separator/>                                
+                <MenuItem x:Name="_MenuItemExit"    Header="_Quitter"        Click="_MenuItemExit_Click"/>
+            </MenuItem>                                     
+            <MenuItem Header="_Edition">                     
+                <MenuItem x:Name="_MenuItemAdd"     Header="_Ajouter"        Click="_MenuItemAdd_Click"/>
+                <MenuItem x:Name="_MenuItemDelete"  Header="_Supprimer"      Click="_MenuItemDelete_Click"/>
             </MenuItem>
         </Menu>
         
@@ -64,11 +65,11 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-                <TextBlock Grid.Row="0" Grid.Column="0" Text="Libellé :" Style="{StaticResource TextBlockMandatoryLISAStyle}"/>
-                <TextBlock Grid.Row="1" Grid.Column="0" Text="ID import :" Style="{StaticResource TextBlockLISAStyle}"/>
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="Libellé :"    Style="{StaticResource TextBlockMandatoryLISAStyle}"/>
+                <TextBlock Grid.Row="1" Grid.Column="0" Text="ID import :"  Style="{StaticResource TextBlockLISAStyle}"/>
 
-                <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Path=Libelle, UpdateSourceTrigger=PropertyChanged}" Style="{StaticResource TextBoxLISAStyle}"/>
-                <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=ImportId, UpdateSourceTrigger=PropertyChanged}" Style="{StaticResource TextBoxLISAStyle}"/>
+                <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Path=Libelle, UpdateSourceTrigger=PropertyChanged}"    Style="{StaticResource TextBoxLISAStyle}"/>
+                <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=ImportId, UpdateSourceTrigger=PropertyChanged}"   Style="{StaticResource TextBoxLISAStyle}"/>
             </Grid>
             
         </Grid>
